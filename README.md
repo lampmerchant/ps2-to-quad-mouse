@@ -21,7 +21,7 @@ Mouse quadrature signal must be pulled down with a 1 MΩ resistor and inverted u
 
 ### Configuration
 
-Configuration mode can be entered by holding down the left and right mouse buttons for approximately five seconds.
+Configuration mode can be entered by holding down the left and right mouse buttons for approximately five seconds without moving the mouse.
 
 Once entered, the mouse speed can be increased by clicking the right mouse button and decreased by clicking the left mouse button.  There are seven speed settings:
 
@@ -36,6 +36,8 @@ Once entered, the mouse speed can be increased by clicking the right mouse butto
 | 7 (slowest) | 0.57142857x |
 
 \* Versus normal quadrature mouse speed
+
+Configuration mode is exited by waiting for approximately five seconds without moving the mouse or clicking any button.
 
 
 ### Compatibility
