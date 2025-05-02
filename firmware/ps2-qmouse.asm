@@ -203,8 +203,9 @@ Init
 	banksel	ANSELA		;All pins digital, not analog
 	clrf	ANSELA
 
-	banksel	LATA		;Default state of output pins is low, PS/2 pins
-	clrf	LATA		; ready to be pulled low
+	banksel	LATA		;Default state of output pins is low, except
+	movlw	1 << MBT_PIN	; button (which should be up by default), PS/2
+	movwf	LATA		; pins ready to be pulled low
 
 	banksel	TRISA		;PS/2 pins open-collector outputs which are
 	movlw	B'00001011'	; currently off, quadrature controlled by weak
